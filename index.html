@@ -67,7 +67,7 @@
     /* === Divider === */
     .divider {
       width: 80%;
-      margin: 15px auto;
+      margin: 20px auto;
       border-top: 2px solid #f59e0b;
     }
 
@@ -87,8 +87,8 @@
       padding: 10px;
       box-shadow: 3px 3px 0 #78350f;
       transition: transform 0.2s, background 0.2s;
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -198,11 +198,11 @@
       <div class="divider"></div>
 
       <div class="contact-info">
-        <p><strong>📞 Mobile:</strong> 9773137485</p>
-        <p><strong>📧 Email:</strong> <a href="mailto:chinmaykoshe2004@gmail.com">chinmaykoshe2004@gmail.com</a></p>
-        <p><strong>📍 Address:</strong> Raigad , Maharashtra , IN</p>
-        <p><strong>🌐 Homepage:</strong> <a href="https://chinmaykoshe.netlify.app"
-            target="_blank">chinmaykoshe.netlify.app</a></p>
+        <p><strong>📞</strong> 9773137485</p>
+        <p><strong>📧 </strong> <a href="mailto:chinmaykoshe2004@gmail.com">chinmaykoshe2004@gmail.com</a></p>
+        <p><strong>📍 </strong> Raigad , Maharashtra , IN</p>
+        <p><strong>🌐 </strong> <a href="https://chinmaykoshe.netlify.app" target="_blank">chinmaykoshe.netlify.app</a>
+        </p>
       </div>
     </div>
 
@@ -219,16 +219,19 @@
   <script>
     // === SVG ICONS ===
     const svgIcons = {
-      whatsapp: `<svg viewBox="0 0 24 24"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.75.46 3.45 1.34 4.96l-1.44 5.27 5.4-1.41a9.9 9.9 0 004.66 1.19h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.17-2.93-7.06A9.94 9.94 0 0012.04 2zm0 17.9h-.01a8.03 8.03 0 01-4.09-1.12l-.29-.17-3.2.83.85-3.1-.2-.32a8.04 8.04 0 01-1.25-4.33c0-4.43 3.6-8.04 8.05-8.04 2.15 0 4.17.84 5.69 2.35a7.97 7.97 0 012.36 5.7c0 4.45-3.61 8.05-8.06 8.05zm4.53-6.06c-.25-.13-1.46-.72-1.68-.8-.23-.08-.4-.13-.57.13-.17.25-.65.8-.8.97-.15.17-.3.19-.55.06-.25-.13-1.04-.38-1.98-1.22a7.4 7.4 0 01-1.37-1.7c-.14-.25 0-.38.12-.51.12-.12.25-.3.38-.44.13-.14.17-.25.25-.42.08-.17.04-.32-.02-.44-.06-.13-.56-1.36-.77-1.86-.2-.48-.4-.42-.57-.43h-.48c-.16 0-.44.06-.67.32-.23.25-.88.86-.88 2.1s.9 2.43 1.02 2.6c.13.17 1.76 2.7 4.26 3.78.6.26 1.06.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.46-.6 1.66-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.48-.3z"/></svg>`,
-      linkedin: `<svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19M8.34 17V10.4H6V17H8.34M7.17 9.32A1.37 1.37 0 007.18 6.6A1.37 1.37 0 007.17 9.32M18 17V13.33C18 11.25 16.64 10.4 15.1 10.4A2.76 2.76 0 0012.34 12V10.4H10V17H12.34V13.5C12.34 12.5 12.96 12 13.83 12C14.7 12 15.1 12.5 15.1 13.5V17H18Z" /></svg>`,
-      instagram: `<svg viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7V17C2 19.8 4.2 22 7 22H17C19.8 22 22 19.8 22 17V7C22 4.2 19.8 2 17 2H7M17 4C18.66 4 20 5.34 20 7V17C20 18.66 18.66 20 17 20H7C5.34 20 4 18.66 4 17V7C4 5.34 5.34 4 7 4H17M17.5 5.5A1 1 0 0016.5 6.5A1 1 0 0017.5 7.5A1 1 0 0018.5 6.5A1 1 0 0017.5 5.5M12 7A5 5 0 017 12A5 5 0 0112 17A5 5 0 0117 12A5 5 0 0112 7M12 9A3 3 0 0015 12A3 3 0 0012 15A3 3 0 009 12A3 3 0 0012 9Z" /></svg>`
+      whatsapp: `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.75.46 3.45 1.34 4.96l-1.44 5.27 5.4-1.41a9.9 9.9 0 004.66 1.19h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.17-2.93-7.06A9.94 9.94 0 0012.04 2zm0 17.9h-.01a8.03 8.03 0 01-4.09-1.12l-.29-.17-3.2.83.85-3.1-.2-.32a8.04 8.04 0 01-1.25-4.33c0-4.43 3.6-8.04 8.05-8.04 2.15 0 4.17.84 5.69 2.35a7.97 7.97 0 012.36 5.7c0 4.45-3.61 8.05-8.06 8.05zm4.53-6.06c-.25-.13-1.46-.72-1.68-.8-.23-.08-.4-.13-.57.13-.17.25-.65.8-.8.97-.15.17-.3.19-.55.06-.25-.13-1.04-.38-1.98-1.22a7.4 7.4 0 01-1.37-1.7c-.14-.25 0-.38.12-.51.12-.12.25-.3.38-.44.13-.14.17-.25.25-.42.08-.17.04-.32-.02-.44-.06-.13-.56-1.36-.77-1.86-.2-.48-.4-.42-.57-.43h-.48c-.16 0-.44.06-.67.32-.23.25-.88.86-.88 2.1s.9 2.43 1.02 2.6c.13.17 1.76 2.7 4.26 3.78.6.26 1.06.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.46-.6 1.66-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.48-.3z"/></svg>`,
+      linkedin: `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19M8.34 17V10.4H6V17H8.34M7.17 9.32A1.37 1.37 0 007.18 6.6A1.37 1.37 0 007.17 9.32M18 17V13.33C18 11.25 16.64 10.4 15.1 10.4A2.76 2.76 0 0012.34 12V10.4H10V17H12.34V13.5C12.34 12.5 12.96 12 13.83 12C14.7 12 15.1 12.5 15.1 13.5V17H18Z" /></svg>`,
+      instagram: `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7V17C2 19.8 4.2 22 7 22H17C19.8 22 22 19.8 22 17V7C22 4.2 19.8 2 17 2H7M17 4C18.66 4 20 5.34 20 7V17C20 18.66 18.66 20 17 20H7C5.34 20 4 18.66 4 17V7C4 5.34 5.34 4 7 4H17M17.5 5.5A1 1 0 0016.5 6.5A1 1 0 0017.5 7.5A1 1 0 0018.5 6.5A1 1 0 0017.5 5.5M12 7A5 5 0 017 12A5 5 0 0112 17A5 5 0 0117 12A5 5 0 0112 7M12 9A3 3 0 0015 12A3 3 0 0012 15A3 3 0 009 12A3 3 0 0012 9Z" /></svg>`,
+      github: `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.475 5.922.43.372.813 1.102.813 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>`
     };
+
 
     // === Social Links Data ===
     const links = [
-      { href: "https://wa.me/9773137485", icon: svgIcons.whatsapp },
+      { href: "https://wa.me/+919773137485", icon: svgIcons.whatsapp },
       { href: "https://www.linkedin.com/in/chinmay-koshe-b38793288/", icon: svgIcons.linkedin },
       { href: "https://instagram.com/chinmay_2709_", icon: svgIcons.instagram },
+      { href: "https://github.com/chinmaykoshe", icon: svgIcons.github },
     ];
 
     const container = document.getElementById("socialLinks");
@@ -243,13 +246,13 @@
 
     // === Projects ===
     const projects = [
-      { name: "CakeShop", img: "https://via.placeholder.com/50", link: "#" },
-      { name: "Hiring Hub", img: "https://via.placeholder.com/50", link: "#" },
-      { name: "Firebase Notepad", img: "https://via.placeholder.com/50", link: "#" },
-      { name: "ChatApp", img: "https://via.placeholder.com/50", link: "#" },
-      { name: "FoodFly", img: "https://via.placeholder.com/50", link: "#" },
-      { name: "Visual Classroom", img: "https://via.placeholder.com/50", link: "#" },
-      { name: "Hotel Hunt", img: "https://via.placeholder.com/50", link: "#" },
+      { name: "CakeShop", img: "https://ritual-cakes--alpha.vercel.app/assets/logo-CwUyrW8X.png", link: "#" },
+      { name: "Hiring Hub", img: "https://cdn-icons-png.flaticon.com/512/5540/5540603.png", link: "#" },
+      { name: "Firebase Notepad", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8xCYGIbL5dqXN14COUtxcD9gKOMSPe7afg&s", link: "#" },
+      { name: "ChatApp", img: "https://play-lh.googleusercontent.com/c5HiVEILwq4DqYILPwcDUhRCxId_R53HqV_6rwgJPC0j44IaVlvwASCi23vGQh5G3LIZ", link: "#" },
+      { name: "FoodFly", img: "https://png.pngtree.com/png-clipart/20250103/original/pngtree-food-icon-design-vector-png-image_3645463.png", link: "#" },
+      { name: "Visual Classroom", img: "https://cdn.create.vista.com/api/media/small/470703342/stock-vector-initial-letter-vector-logo", link: "#" },
+      { name: "Hotel Hunt", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiz9ufxHfgNA8FqBru-clwOi4WFI9rxlFNqA&s", link: "#" },
     ];
 
     const projectContainer = document.getElementById("projects");
